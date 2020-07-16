@@ -15,7 +15,7 @@ class ReservationCard extends Component {
         <p>{this.props.time} pm</p>
         <p>Number of guests:{this.props.numOfGuests}</p>
         <button 
-          class="cancelRes" 
+          class="cancel-res button" 
           type="button"
           onClick={this.props.cancelRes}
         >Cancel</button>
