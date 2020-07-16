@@ -7,7 +7,7 @@ class ReservationContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      placeHolder: null;
+      placeHolder: null
     }
 
   }
@@ -19,9 +19,12 @@ class ReservationContainer extends Component {
           date={reservation.date}
           time={reservation.time}
           numOfGuests={reservation.number}
-          cancelReservation={}
+          // cancelRes={}
           />
       )
     });
+    return <section className="ReservationContainer">{reservationCards}</section>;
   }
 }
+
+export default ReservationContainer;
