@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ReservationContainer from "../ReservationContainer/ReservationContainer";
+import ReservationForm from "../ReservationForm/ReservationForm";
 import { getReservations, postReservation, deleteReservation} from "../apiCalls";
 
 class App extends Component {
@@ -10,6 +11,10 @@ class App extends Component {
       allReservations: [],
       error: null
     }
+  }
+
+  addReservation = (newRes) => {
+    this.setState({allReservations: newRes})
   }
   
   componentDidMount = async () => {
@@ -26,6 +31,10 @@ class App extends Component {
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
+          <ReservationForm
+            allReservations={this.state.allReservations}
+            addReservation={this.addReservation}
+          />
 
         </div>
         <div className='resy-container'>
