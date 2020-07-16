@@ -1,0 +1,27 @@
+.ReservationForm {
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 13px 0px #000000c2;
+  color: #ede9ec;
+  justify-self: center;
+  margin: auto;
+  padding: 30px;
+  max-width: 90vw;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ede9ec;
+  box-shadow: inset 4px 7px 13px 0px #00000061, inset -2px -2px 4px 0px #8f8f8f1c;
+  border-radius: 30px;
+  color: #ede9ec;
+  font-size: 16px;
+  height: 40px;
+  margin: 5px;
+  outline: none;
+  padding-left: 20px;
+  width: 20%;
+}

@@ -1,0 +1,28 @@
+.reservationCard {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: inset 0px 1px 8px 2px #131313;
+}
+h3 {
+  color: teal;
+  text-shadow: 1px 1px 1px white;
+}
+button {
+  background: teal;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 7px 13px 0px #000000c2, inset 4px 7px 13px 0px #58dafb;
+  color: #ede9ec;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  margin-top: 4%;
+  outline: none;
+  width: 100%;
+}
+.button:hover {
+  box-shadow: inset 4px 7px 13px 0px #000000c2;
+}

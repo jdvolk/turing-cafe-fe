@@ -12,7 +12,7 @@ export const postReservation = async (name, date, time, number) => {
       "method": "POST",
       "headers": {
         "content-type": "application/json"
-      },       "body": JSON.stringify({
+      }, "body": JSON.stringify({
         "name": name,
         "date": date,
         "time": time,
